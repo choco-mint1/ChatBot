@@ -1,3 +1,13 @@
+NOTE: To run the front end in localhost, you need to run it with a proxy server. To do so: 
+npm install -g local-cors-proxy
+API endpoint that we want to request that has CORS issues: https://www.yourdomain.ie/movies/list
+
+Start Proxy: lcp --proxyUrl https://www.yourdomain.ie
+
+Then in your client code, new API endpoint: http://localhost:8010/proxy/movies/list
+
+
+
 # Final Vue Capstone Project Seed
 ​
 This is the Vue starter project for the final capstone. This document walks you through how to set up and run the project. It also explains the project's features, such as Vue Router, Vuex, and authentication.
